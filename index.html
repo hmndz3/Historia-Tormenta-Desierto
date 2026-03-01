@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Operación Tormenta de Arena</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>Operación Tormenta de Arena</h1>
+      <nav aria-label="Breadcrumb">
+        <ol>
+          <li>Inicio</li>
+        </ol>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+
+        <figure>
+          <img src="/images/desierto.jpg" alt="Vista panorámica del desierto al amanecer" />
+          <figcaption>El desierto de Al-Rashid, zona de operaciones</figcaption>
+        </figure>
+
+        <section>
+          <h2>Briefing de Misión</h2>
+          <p>
+            Eres el Sargento Kane, agente de operaciones especiales con más de diez años de experiencia
+            en misiones de alto riesgo. Esta noche recibes la llamada que cambiará todo.
+          </p>
+          <p>
+            Tu comandante te comunica que una base enemiga en el desierto de Al-Rashid contiene
+            documentos clasificados que podrían comprometer a cientos de agentes encubiertos alrededor
+            del mundo. Tienes 12 horas antes de que sean destruidos.
+          </p>
+          <p>
+            Estás solo. Sin refuerzos. Sin segunda oportunidad.
+          </p>
+        </section>
+
+        <section>
+          <h2>Datos de la misión</h2>
+          <ul>
+            <li>Objetivo: Recuperar los documentos clasificados</li>
+            <li>Tiempo límite: 12 horas</li>
+            <li>Zona: Desierto de Al-Rashid</li>
+            <li>Clasificación: Alto riesgo</li>
+          </ul>
+
+          <details>
+            <summary>Ver expediente completo del agente Kane</summary>
+            <p>
+              Nombre en clave: Kane. Edad: 34. Especialidades: infiltración, combate cuerpo a cuerpo,
+              demoliciones. Misiones completadas: 47. Misiones fallidas: 0. Última misión: Extracción
+              en zona de guerra, Oriente Medio, hace 6 meses.
+            </p>
+          </details>
+
+          <progress value="0" max="5">Progreso de la misión: 0 de 5 etapas</progress>
+          <p>Progreso de la misión: etapa 1 de 5</p>
+        </section>
+
+        <section>
+          <h2>Hora de actuar</h2>
+          <p>
+            Llegas al perímetro exterior de la base. Son las
+            <time datetime="02:00">2:00 AM</time>.
+            El silencio del desierto solo es interrumpido por el viento. Tienes dos opciones de entrada.
+          </p>
+
+          <dialog id="modal-advertencia">
+            <p>⚠️ Advertencia: Una vez que elijas tu ruta de entrada, no podrás volver atrás fácilmente.</p>
+            <p>¿Estás seguro de que quieres continuar?</p>
+            <form method="dialog">
+              <button>Entendido, continuar</button>
+            </form>
+          </dialog>
+
+          <p><button onclick="document.getElementById('modal-advertencia').showModal()">Ver advertencia antes de decidir</button></p>
+
+          <nav>
+            <ul>
+              <li><a href="./base/entrada.html">Infiltrarte por la entrada principal de la base</a></li>
+              <li><a href="./desierto/camino.html">Rodear la base por el desierto</a></li>
+            </ul>
+          </nav>
+        </section>
+
+      </article>
+    </main>
+
+    <footer>
+      <p>Operación Tormenta de Arena &mdash; Elige con cuidado. Las decisiones tienen consecuencias.</p>
+    </footer>
+
+  </body>
+</html>
